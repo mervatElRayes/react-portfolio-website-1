@@ -1,0 +1,159 @@
+#header{
+    border: 1px solid yellow;
+    height: auto;
+}
+
+#header {
+   height: 130vh;
+  padding-top: 7rem;
+  overflow: hidden;
+  
+
+}
+
+header.container{
+    text-align: center;
+   
+}
+ .header__container {
+  text-align: center;
+  height: 100%;
+   position: relative;  
+
+} 
+
+/* ===========CTA ============ */
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+/* =========== HEADER SOCIALS ============= */
+.header__socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 5rem;
+
+}
+.header__socials::after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* ============ ME ==================== */
+.header__container .me{
+    width: 22rem;  
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 2.5rem;
+    overflow: hidden;
+ 
+   
+
+}
+.me img{
+    border-radius: 35px 35px 0 0;
+    padding: 15px;
+}
+/* ============== SCROLL DOWN ====================== */
+.scroll__down{
+    position: absolute;
+    right: 2.3rem;
+    bottom: 10rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+
+}
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ============== */
+@media screen and (max-width: 1024px) {
+    #header {
+        height: 120vh;
+
+}
+
+.header__container {
+  
+    height: 50%;
+  
+}
+
+.header__socials{
+    position: absolute;
+    left: 0;
+    bottom: -6rem;
+}
+
+.scroll__down {
+    position: absolute;
+    right: 2.3rem;
+    bottom: -2rem;
+}
+}
+
+
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ============== */
+@media screen and (max-width: 600px) {
+    #header{
+        height: 150vh;
+     }
+
+     .header__socials,
+     .scroll__down{
+        display: none;
+
+     }
+    
+    
+}
+
+/* =========== MEDIA QUERIES ( Extra SMALL DEVICES) ============== */
+@media screen and (max-width: 200px) {
+
+    #header {
+        height: 104vh;
+    } 
+
+  
+    .header__container h1 {
+        font-size: 1rem;
+    }
+
+    .cta {
+      
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cta .btn-primary{
+        width: initial !important;
+        padding: 0.5rem 1.2rem !important
+    }
+   
+
+
+    .cta .btn{
+        padding: 0.5rem 0.2rem;
+    }
+
+    .me {
+        width: 16rem;
+        margin-top: 0.5rem;
+    }
+    .me img {
+        border-radius: 60px 60px 0 0;
+        padding: 45px;
+        margin-left: 45px;
+    }
+    
+    
+}

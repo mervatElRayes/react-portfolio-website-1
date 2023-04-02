@@ -1,0 +1,49 @@
+nav{
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    bottom:30px;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 2rem;
+    backdrop-filter: blur;
+}
+nav a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-primary);
+    font-size: 1.1rem;
+
+}
+nav a:hover{
+    /* background: rgba(0, 0, 0, 0.3) */
+    background: var(--color-primary-variant)
+
+}
+nav a.active{
+    background: var(--color-bg);
+    color: var(--color-white);
+}
+
+/* =========== MEDIA QUERIES ( Extra SMALL DEVICES) ============== */
+@media screen and (max-width: 200px) {
+    nav {
+        background: rgba(0, 0, 0, 0.3);
+        width: max-content;
+        z-index: 2;
+        position: fixed;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 0.1rem;
+        padding: 0.7rem 0.1rem;
+    }
+}
